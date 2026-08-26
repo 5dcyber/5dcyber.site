@@ -202,7 +202,9 @@ export function Footer() {
             <strong>
               Leadership in Cyber Operations.
             </strong>
+
             <br />
+
             We build, pilot and secure the
             digital future through integrated
             intelligence, governed security and
@@ -286,25 +288,33 @@ export function Footer() {
           <div className="footer-col">
             <h5>Connect</h5>
 
-            <p className="footer-contact">
-              <span>
+            <div className="footer-contact">
+              <span className="footer-contact-item">
                 <MapPin aria-hidden="true" />
-                Suite no12, PulseBay 64,
-                Subbiah Salai, Opposite to
-                railway station, Puducherry
-                - 605001
+
+                <span>
+                  Suite no12, PulseBay 64,
+                  Subbiah Salai, Opposite to
+                  railway station, Puducherry
+                  - 605001
+                </span>
               </span>
 
               tel:+919442331700
                 <Phone aria-hidden="true" />
-                094423 31700
+
+                <span>094423 31700</span>
               </a>
 
-              <a href="mailto:enquiry@vpilot.org">
+              <a
+                className="footer-contact-item"
+                href="mailto:enquiry@vpilot.org"
+              >
                 <Mail aria-hidden="true" />
-                enquiry@vpilot.org
+
+                <span>enquiry@vpilot.org</span>
               </a>
-            </p>
+            </div>
 
             <Link to="/contact">
               Contact and Careers
@@ -368,6 +378,7 @@ export function Footer() {
         </span>
       </div>
     </footer>
+ 
   );
 }
 
